@@ -1,0 +1,31 @@
+
+.cuadroDeResultados{
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-top: 1em;
+    text-align: center;
+}
+.cuadroDeResultados h3{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: .3em;
+}
+.cuadroDeResultados h4{
+    padding: .5em;
+}
+.cuadroDeResultados h4 p{
+    color: gray;
+    display: inline-block;
+}
+.cuadroDeResultados .empatar{
+    color: burlywood;
+}
+.cuadroDeResultados .ganar{
+    color: green;
+}
+.cuadroDeResultados .perder{
+    color: red;
+}

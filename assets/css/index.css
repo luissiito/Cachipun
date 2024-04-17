@@ -1,0 +1,24 @@
+
+@import './Botones.css';
+@import './CuadroDeResultados.css';
+@import './Modal.css';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main div input[type='text']{
+    padding: .35em;
+    text-align: center;
+}
+main div.barra{
+    padding: 1em;
+    text-align: center;
+}
+main div.resultados{
+    display: grid;
+    grid-gap: .5em;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1em;
+}
