@@ -1,5 +1,5 @@
 
-const urlBase = window.location.protocol + '//' + window.location.host
+const urlBase = window.location.protocol + '//' + window.location.host +  window.location.pathname
 
 export default class Modal{
     constructor(){
@@ -57,6 +57,6 @@ export default class Modal{
     }
 
     recargarPagina(){        
-        window.location.href = `${urlBase}/index.html`
+        window.location.href = `${urlBase}`
     }
 }
