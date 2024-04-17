@@ -1,4 +1,6 @@
 
+const urlBase = window.location.protocol + '//' + window.location.host
+
 export default class Modal{
     constructor(){
         this.contenedor = document.createElement('div')
@@ -55,6 +57,6 @@ export default class Modal{
     }
 
     recargarPagina(){        
-        window.location.href = 'http://127.0.0.1:5500/cachipun.html'
+        window.location.href = `${urlBase}/index.html`
     }
 }
