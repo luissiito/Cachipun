@@ -15,12 +15,6 @@
 .modal h2{
     color: white;
 }
-.modal h3:nth-child(2){
-    color: green;
-}
-.modal h3:nth-child(3){
-    color: red;
-}
-.modal h3:nth-child(4){
+.modal h3{
     color: white;
 }
