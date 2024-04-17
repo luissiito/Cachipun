@@ -79,17 +79,17 @@ export default class JuegoCachipun{
         }
     }    
 
-    obtenerGanador(jugadaJugador, jugadaMaquina, cuadroDeResultados){
-        if(jugadaJugador == jugadaMaquina){ 
+    obtenerGanador(jugadaJugador, jugadaMaquina, cuadroDeResultados) {
+        if (jugadaJugador == jugadaMaquina) {
             this.getJugador().aumentarEmpates()
             cuadroDeResultados.setMensaje('ES UN EMPATE')
             cuadroDeResultados.getMensaje().classList.add('empatar')
-     }else if((jugadaJugador == 0) && (jugadaMaquina == 2) || (jugadaJugador == 2) && (jugadaMaquina == 1) 
-           || (jugadaJugador == 1) && (jugadaMaquina == 0)){ 
+        } else if ((jugadaJugador == 0) && (jugadaMaquina == 2) || (jugadaJugador == 2) && (jugadaMaquina == 1)
+            || (jugadaJugador == 1) && (jugadaMaquina == 0)) {
             this.getJugador().aumentarVictorias()
-            cuadroDeResultados.setMensaje('GANASTE. FELICITACIONES !')                
+            cuadroDeResultados.setMensaje('GANASTE. FELICITACIONES !')
             cuadroDeResultados.getMensaje().classList.add('ganar')
-        }else{
+        } else {
             this.getJugador().aumentarDerrotas()
             cuadroDeResultados.setMensaje('PERDISTE. SUERTE EN LA PRÓXIMA')
             cuadroDeResultados.getMensaje().classList.add('perder')
